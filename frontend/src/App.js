@@ -1,0 +1,52 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { AuthProvider, useAuth } from './utils/AuthContext';
+import Layout from './components/Layout';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
+import CodingTest from './pages/CodingTest';
+import AptitudeTest from './pages/AptitudeTest';
+import CommunicationTest from './pages/CommunicationTest';
+import Resources from './pages/Resources';
+import Results from './pages/Results';
+
+function Protected({ children }) {
+  const { user, loading } = useAuth();
+  if (loading) return (
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+      <div className="spinner" />
+    </div>
+  );
+  return user ? children : <Navigate to="/login" />;
+}
+
+function Public({ children }) {
+  const { user, loading } = useAuth();
+  if (loading) return null;
+  return user ? <Navigate to="/dashboard" /> : children;
+}
+
+export default function App() {
+  return (
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" element={<Public><Login /></Public>} />
+          <Route path="/register" element={<Public><Register /></Public>} />
+          <Route path="/" element={<Protected><Layout /></Protected>}>
+            <Route index element={<Navigate to="/dashboard" />} />
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="tests/coding" element={<CodingTest />} />
+            <Route path="tests/aptitude" element={<AptitudeTest />} />
+            <Route path="tests/communication" element={<CommunicationTest />} />
+            <Route path="resources" element={<Resources />} />
+            <Route path="results" element={<Results />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
+  );
+}

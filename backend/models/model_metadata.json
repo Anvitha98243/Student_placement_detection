@@ -1,0 +1,35 @@
+{
+  "accuracy": 86.5,
+  "feature_cols": [
+    "cgpa",
+    "tenth_percentage",
+    "twelfth_percentage",
+    "programming_skill",
+    "communication_skill",
+    "problem_solving",
+    "teamwork",
+    "leadership",
+    "internships",
+    "projects",
+    "certifications",
+    "hackathons",
+    "backlogs",
+    "resume_score",
+    "aptitude_score",
+    "coding_score",
+    "communication_test",
+    "branch_encoded"
+  ],
+  "branches": [
+    "AIML",
+    "CIVIL",
+    "CSE",
+    "DS",
+    "ECE",
+    "EEE",
+    "IT",
+    "MECH"
+  ],
+  "training_samples": 4000,
+  "test_samples": 1000
+}
