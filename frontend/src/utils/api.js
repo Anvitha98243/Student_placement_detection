@@ -11,8 +11,3 @@ API.interceptors.request.use((config) => {
 });
 
 export default API;
-```
-
-Then create a new file called **`.env`** inside the `frontend` folder and paste:
-```
-REACT_APP_API_URL=https://placeai-backend.onrender.com/api
