@@ -9,12 +9,12 @@
     "react-router-dom": "^6.20.0",
     "axios": "^1.6.0",
     "recharts": "^2.10.0",
-    "lucide-react": "^0.294.0",
-    "react-circular-progressbar": "^2.1.0"
+    "lucide-react": "^0.294.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "postinstall": "chmod +x node_modules/.bin/react-scripts"
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
