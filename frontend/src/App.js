@@ -11,7 +11,6 @@ import AptitudeTest from './pages/AptitudeTest';
 import CommunicationTest from './pages/CommunicationTest';
 import Resources from './pages/Resources';
 import Results from './pages/Results';
-import MockInterview from './pages/MockInterview';
 import Roadmap from './pages/Roadmap';
 
 
@@ -47,7 +46,7 @@ export default function App() {
             <Route path="tests/communication" element={<CommunicationTest />} />
             <Route path="resources" element={<Resources />} />
             <Route path="results" element={<Results />} />
-            <Route path="mock-interview" element={<MockInterview />} />
+            
             <Route path="roadmap" element={<Roadmap />} />
             
           </Route>

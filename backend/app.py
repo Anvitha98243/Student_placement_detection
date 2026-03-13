@@ -8,29 +8,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import joblib, json, os, re
 from datetime import timedelta, datetime
 import numpy as np
-import requests
 app = Flask(__name__)
-@app.route('/api/claude', methods=['POST'])
-@jwt_required()
-def claude_proxy():
-    api_key = os.environ.get('ANTHROPIC_API_KEY', '')
-    if not api_key:
-        return jsonify({'error': 'Anthropic API key not configured'}), 500
-    data = request.json
-    try:
-        response = requests.post(
-            'https://api.anthropic.com/v1/messages',
-            headers={
-                'Content-Type': 'application/json',
-                'x-api-key': api_key,
-                'anthropic-version': '2023-06-01',
-            },
-            json=data,
-            timeout=60
-        )
-        return jsonify(response.json()), response.status_code
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
 # Config
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{BASE_DIR}/placement.db'
