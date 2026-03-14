@@ -13,7 +13,6 @@ import Resources from './pages/Resources';
 import Results from './pages/Results';
 import Roadmap from './pages/Roadmap';
 
-
 function Protected({ children }) {
   const { user, loading } = useAuth();
   if (loading) return (
@@ -46,9 +45,7 @@ export default function App() {
             <Route path="tests/communication" element={<CommunicationTest />} />
             <Route path="resources" element={<Resources />} />
             <Route path="results" element={<Results />} />
-            
             <Route path="roadmap" element={<Roadmap />} />
-            
           </Route>
         </Routes>
       </BrowserRouter>

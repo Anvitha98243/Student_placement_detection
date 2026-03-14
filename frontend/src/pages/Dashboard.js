@@ -124,13 +124,25 @@ export default function Dashboard() {
         <div className="card">
           <div className="card-title">💡 Skills Overview</div>
           {radarData.length > 0 ? (
-            <ResponsiveContainer width="100%" height={200}>
-              <RadarChart data={radarData}>
-                <PolarGrid stroke="rgba(99,102,241,0.2)" />
-                <PolarAngleAxis dataKey="skill" tick={{ fill: '#94a3b8', fontSize: 11 }} />
-                <Radar name="Skills" dataKey="value" stroke="#6366f1" fill="#6366f1" fillOpacity={0.3} />
-              </RadarChart>
-            </ResponsiveContainer>
+            <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+              <ResponsiveContainer width="100%" height={stats.lsrw_breakdown ? 180 : 200}>
+                <RadarChart data={radarData}>
+                  <PolarGrid stroke="rgba(99,102,241,0.2)" />
+                  <PolarAngleAxis dataKey="skill" tick={{ fill: '#94a3b8', fontSize: 11 }} />
+                  <Radar name="Skills" dataKey="value" stroke="#6366f1" fill="#6366f1" fillOpacity={0.3} />
+                </RadarChart>
+              </ResponsiveContainer>
+              {stats.lsrw_breakdown && (
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 8, marginTop: 'auto', padding: '10px 0' }}>
+                  {Object.entries(stats.lsrw_breakdown).map(([key, val]) => (
+                    <div key={key} style={{ textAlign: 'center' }}>
+                      <div style={{ fontSize: 10, color: 'var(--text3)', textTransform: 'uppercase' }}>{key[0]}</div>
+                      <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--accent)' }}>{val.toFixed(0)}</div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           ) : <div style={{ color: 'var(--text3)', textAlign: 'center', padding: 40 }}>Complete your profile first</div>}
         </div>
       </div>

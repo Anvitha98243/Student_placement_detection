@@ -5,7 +5,7 @@ import { useAuth } from '../utils/AuthContext';
 const navItems = [
   { to: '/dashboard', icon: '🏠', label: 'Dashboard' },
   { to: '/profile', icon: '👤', label: 'My Profile' },
-  { to: '/roadmap', icon: '🎯', label: '30-Day Roadmap', badge: 'NEW' },
+  { to: '/roadmap', icon: '📆', label: '30-Day Roadmap' },
   { to: '/tests/coding', icon: '💻', label: 'Coding Test' },
   { to: '/tests/aptitude', icon: '🧠', label: 'Aptitude Test' },
   { to: '/tests/communication', icon: '🗣️', label: 'Communication' },

@@ -8,7 +8,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import joblib, json, os, re
 from datetime import timedelta, datetime
 import numpy as np
+
 app = Flask(__name__)
+
 # Config
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{BASE_DIR}/placement.db'
@@ -280,14 +282,25 @@ def get_aptitude_questions():
 @app.route('/api/tests/communication', methods=['GET'])
 @jwt_required()
 def get_communication_test():
-    scenarios = [
-        {'id': 1, 'type': 'email', 'prompt': 'Write a professional email to your manager requesting 2 days of leave for a personal emergency.', 'hints': ['Use formal salutation', 'State reason briefly', 'Mention dates clearly', 'Express willingness to complete pending work']},
-        {'id': 2, 'type': 'situation', 'prompt': 'You disagree with your team lead about the approach to a project. How would you handle this situation?', 'options': ['Argue your point strongly in front of everyone', 'Schedule a private meeting, present data to support your view respectfully', 'Stay silent and just do what they say', 'Complain to your manager directly'], 'answer': 1},
-        {'id': 3, 'type': 'situation', 'prompt': 'A client is angry about a delayed delivery. What is the best response?', 'options': ['Blame the logistics team', 'Apologize, explain briefly, and provide a new timeline', 'Ignore the complaint', 'Offer a refund immediately without consulting management'], 'answer': 1},
-        {'id': 4, 'type': 'fill_blank', 'prompt': 'Complete the sentence: "I am writing to ________ the position of Software Engineer at your esteemed organization."', 'options': ['apply for', 'ask about', 'request', 'demand'], 'answer': 0},
-        {'id': 5, 'type': 'situation', 'prompt': 'During a presentation, you forget an important point. What do you do?', 'options': ['Panic and stop speaking', 'Calmly say "I\'ll cover that in a moment" and continue', 'Skip it entirely', 'Apologize repeatedly'], 'answer': 1},
-    ]
-    return jsonify({'scenarios': scenarios})
+    lsrw_data = {
+        'listening': [
+            {'id': 'l1', 'prompt': 'Listen to the instruction and choose the correct action.', 'text': 'Please submit the project report by Friday afternoon to the department head.', 'options': ['Submit on Monday', 'Submit on Friday afternoon', 'Submit to the manager', 'Email it today'], 'answer': 1},
+            {'id': 'l2', 'prompt': 'What did the speaker mention as a priority?', 'text': 'Our primary focus this quarter is customer satisfaction and reducing response times.', 'options': ['Increasing sales', 'Reducing costs', 'Customer satisfaction', 'New product launch'], 'answer': 2}
+        ],
+        'speaking': [
+            {'id': 's1', 'prompt': 'Introduce yourself in 3 sentences focus on your skills.', 'hints': ['Greet', 'Mention degree', 'Highlight 2 skills']},
+            {'id': 's2', 'prompt': 'How would you handle a conflict with a colleague?', 'hints': ['Stay calm', 'Direct communication', 'Seek solution']}
+        ],
+        'reading': [
+            {'id': 'r1', 'prompt': 'Read the passage and answer: What is the main benefit of AI in healthcare?', 'passage': 'Artificial Intelligence is revolutionizing healthcare by providing faster diagnoses and personalized treatment plans. It helps doctors analyze vast amounts of data in seconds.', 'options': ['Cheaper medicine', 'Faster diagnoses', 'More doctors', 'Better hospitals'], 'answer': 1},
+            {'id': 'r2', 'prompt': 'Read the passage and answer: What should you do before an interview?', 'passage': 'Preparation is key to a successful interview. Research the company, practice common questions, and dress professionally to make a good first impression.', 'options': ['Arrive late', 'Research the company', 'Buy new shoes', 'Ignore company history'], 'answer': 1}
+        ],
+        'writing': [
+            {'id': 'w1', 'type': 'email', 'prompt': 'Write a professional email to your manager requesting 2 days of leave for a personal emergency.', 'hints': ['Use formal salutation', 'State reason briefly', 'Mention dates clearly', 'Express willingness to complete pending work']},
+            {'id': 'w2', 'type': 'pitch', 'prompt': 'Write a short 2-sentence pitch for a web application project you built.', 'hints': ['Problem solved', 'Tech stack used']}
+        ]
+    }
+    return jsonify(lsrw_data)
 
 @app.route('/api/tests/submit', methods=['POST'])
 @jwt_required()
@@ -319,7 +332,13 @@ def submit_test():
             profile.problem_solving = min(10, (profile.problem_solving or 5) * 0.7 + pct * 0.3)
         elif test_type == 'communication':
             profile.communication_test = pct
-            profile.communication_skill = min(10, (profile.communication_skill or 5) * 0.7 + pct * 0.3)
+            # Calculate more granular communication skill if LSRW breakdown provided
+            lsrw_scores = data.get('details', {}).get('lsrw_scores')
+            if lsrw_scores:
+                avg_lsrw = sum(lsrw_scores.values()) / len(lsrw_scores)
+                profile.communication_skill = min(10, (profile.communication_skill or 5) * 0.6 + avg_lsrw * 0.4)
+            else:
+                profile.communication_skill = min(10, (profile.communication_skill or 5) * 0.7 + pct * 0.3)
         if model:
             prob, sc = predict_placement(profile)
             profile.placement_probability = prob
@@ -403,6 +422,7 @@ def get_dashboard_stats():
             'certifications': profile.certifications,
             'hackathons': profile.hackathons,
         },
+        'lsrw_breakdown': json.loads(TestResult.query.filter_by(user_id=uid, test_type='communication').order_by(TestResult.taken_at.desc()).first().details).get('lsrw_scores') if TestResult.query.filter_by(user_id=uid, test_type='communication').first() else None,
         'test_history': tests_by_type,
         'total_tests_taken': len(test_results),
         'suggestions': generate_suggestions(profile)
@@ -498,4 +518,4 @@ with app.app_context():
 if __name__ == '__main__':
     print("Starting AI Placement System Backend...")
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=False)
+    app.run(host='0.0.0.0', port=port, debug=True)

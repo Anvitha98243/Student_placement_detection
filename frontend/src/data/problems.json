@@ -1,0 +1,2002 @@
+[
+  {
+    "id": 1,
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/two-sum/",
+    "role": "Frontend",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 2,
+    "title": "Flatten Array",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/flatten-deeply-nested-array/",
+    "role": "Frontend",
+    "category": "JavaScript",
+    "isLocked": false
+  },
+  {
+    "id": 3,
+    "title": "Memoize",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/memoize/",
+    "role": "Frontend",
+    "category": "JavaScript",
+    "isLocked": false
+  },
+  {
+    "id": 4,
+    "title": "Debounce",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/debounce/",
+    "role": "Frontend",
+    "category": "JavaScript",
+    "isLocked": false
+  },
+  {
+    "id": 5,
+    "title": "Throttle",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/throttle/",
+    "role": "Frontend",
+    "category": "JavaScript",
+    "isLocked": false
+  },
+  {
+    "id": 6,
+    "title": "Frontend Challenge 6",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 7,
+    "title": "Frontend Challenge 7",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 8,
+    "title": "Frontend Challenge 8",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 9,
+    "title": "Frontend Challenge 9",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 10,
+    "title": "Frontend Challenge 10",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 11,
+    "title": "Frontend Challenge 11",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 12,
+    "title": "Frontend Challenge 12",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 13,
+    "title": "Frontend Challenge 13",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 14,
+    "title": "Frontend Challenge 14",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 15,
+    "title": "Frontend Challenge 15",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 16,
+    "title": "Frontend Challenge 16",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 17,
+    "title": "Frontend Challenge 17",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 18,
+    "title": "Frontend Challenge 18",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 19,
+    "title": "Frontend Challenge 19",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 20,
+    "title": "Frontend Challenge 20",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 21,
+    "title": "Frontend Challenge 21",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 22,
+    "title": "Frontend Challenge 22",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 23,
+    "title": "Frontend Challenge 23",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 24,
+    "title": "Frontend Challenge 24",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 25,
+    "title": "Frontend Challenge 25",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 26,
+    "title": "Frontend Challenge 26",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 27,
+    "title": "Frontend Challenge 27",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 28,
+    "title": "Frontend Challenge 28",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 29,
+    "title": "Frontend Challenge 29",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 30,
+    "title": "Frontend Challenge 30",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 31,
+    "title": "Frontend Challenge 31",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 32,
+    "title": "Frontend Challenge 32",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "SQL",
+    "isLocked": true
+  },
+  {
+    "id": 33,
+    "title": "Frontend Challenge 33",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Machine Learning",
+    "isLocked": true
+  },
+  {
+    "id": 34,
+    "title": "Frontend Challenge 34",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Cloud",
+    "isLocked": true
+  },
+  {
+    "id": 35,
+    "title": "Frontend Challenge 35",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "System Design",
+    "isLocked": true
+  },
+  {
+    "id": 36,
+    "title": "Frontend Challenge 36",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Algorithms",
+    "isLocked": true
+  },
+  {
+    "id": 37,
+    "title": "Frontend Challenge 37",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Data Structures",
+    "isLocked": true
+  },
+  {
+    "id": 38,
+    "title": "Frontend Challenge 38",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Design Patterns",
+    "isLocked": true
+  },
+  {
+    "id": 39,
+    "title": "Frontend Challenge 39",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "SQL",
+    "isLocked": true
+  },
+  {
+    "id": 40,
+    "title": "Frontend Challenge 40",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Frontend",
+    "category": "Machine Learning",
+    "isLocked": true
+  },
+  {
+    "id": 41,
+    "title": "Valid Parentheses",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/valid-parentheses/",
+    "role": "Backend",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 42,
+    "title": "Merge Sort",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/sort-an-array/",
+    "role": "Backend",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 43,
+    "title": "Design Twitter",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/design-twitter/",
+    "role": "Backend",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 44,
+    "title": "SQL: Department Highest Salary",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/department-highest-salary/",
+    "role": "Backend",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 45,
+    "title": "Backend Challenge 5",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 46,
+    "title": "Backend Challenge 6",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 47,
+    "title": "Backend Challenge 7",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 48,
+    "title": "Backend Challenge 8",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 49,
+    "title": "Backend Challenge 9",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 50,
+    "title": "Backend Challenge 10",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 51,
+    "title": "Backend Challenge 11",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 52,
+    "title": "Backend Challenge 12",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 53,
+    "title": "Backend Challenge 13",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 54,
+    "title": "Backend Challenge 14",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 55,
+    "title": "Backend Challenge 15",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 56,
+    "title": "Backend Challenge 16",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 57,
+    "title": "Backend Challenge 17",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 58,
+    "title": "Backend Challenge 18",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 59,
+    "title": "Backend Challenge 19",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 60,
+    "title": "Backend Challenge 20",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 61,
+    "title": "Backend Challenge 21",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 62,
+    "title": "Backend Challenge 22",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 63,
+    "title": "Backend Challenge 23",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 64,
+    "title": "Backend Challenge 24",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 65,
+    "title": "Backend Challenge 25",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 66,
+    "title": "Backend Challenge 26",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 67,
+    "title": "Backend Challenge 27",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 68,
+    "title": "Backend Challenge 28",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 69,
+    "title": "Backend Challenge 29",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 70,
+    "title": "Backend Challenge 30",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 71,
+    "title": "Backend Challenge 31",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 72,
+    "title": "Backend Challenge 32",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "SQL",
+    "isLocked": true
+  },
+  {
+    "id": 73,
+    "title": "Backend Challenge 33",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Machine Learning",
+    "isLocked": true
+  },
+  {
+    "id": 74,
+    "title": "Backend Challenge 34",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Cloud",
+    "isLocked": true
+  },
+  {
+    "id": 75,
+    "title": "Backend Challenge 35",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "System Design",
+    "isLocked": true
+  },
+  {
+    "id": 76,
+    "title": "Backend Challenge 36",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Algorithms",
+    "isLocked": true
+  },
+  {
+    "id": 77,
+    "title": "Backend Challenge 37",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Data Structures",
+    "isLocked": true
+  },
+  {
+    "id": 78,
+    "title": "Backend Challenge 38",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Design Patterns",
+    "isLocked": true
+  },
+  {
+    "id": 79,
+    "title": "Backend Challenge 39",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "SQL",
+    "isLocked": true
+  },
+  {
+    "id": 80,
+    "title": "Backend Challenge 40",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Backend",
+    "category": "Machine Learning",
+    "isLocked": true
+  },
+  {
+    "id": 81,
+    "title": "Binary Search",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/binary-search/",
+    "role": "Software Developer",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 82,
+    "title": "LRU Cache",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problems/lru-cache/",
+    "role": "Software Developer",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 83,
+    "title": "Singleton Pattern",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://www.geeksforgeeks.org/singleton-design-pattern-introduction/",
+    "role": "Software Developer",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 84,
+    "title": "Software Developer Challenge 4",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 85,
+    "title": "Software Developer Challenge 5",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 86,
+    "title": "Software Developer Challenge 6",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 87,
+    "title": "Software Developer Challenge 7",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 88,
+    "title": "Software Developer Challenge 8",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 89,
+    "title": "Software Developer Challenge 9",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 90,
+    "title": "Software Developer Challenge 10",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 91,
+    "title": "Software Developer Challenge 11",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 92,
+    "title": "Software Developer Challenge 12",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 93,
+    "title": "Software Developer Challenge 13",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 94,
+    "title": "Software Developer Challenge 14",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 95,
+    "title": "Software Developer Challenge 15",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 96,
+    "title": "Software Developer Challenge 16",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 97,
+    "title": "Software Developer Challenge 17",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 98,
+    "title": "Software Developer Challenge 18",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 99,
+    "title": "Software Developer Challenge 19",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 100,
+    "title": "Software Developer Challenge 20",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 101,
+    "title": "Software Developer Challenge 21",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 102,
+    "title": "Software Developer Challenge 22",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 103,
+    "title": "Software Developer Challenge 23",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 104,
+    "title": "Software Developer Challenge 24",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 105,
+    "title": "Software Developer Challenge 25",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 106,
+    "title": "Software Developer Challenge 26",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 107,
+    "title": "Software Developer Challenge 27",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 108,
+    "title": "Software Developer Challenge 28",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 109,
+    "title": "Software Developer Challenge 29",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 110,
+    "title": "Software Developer Challenge 30",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 111,
+    "title": "Software Developer Challenge 31",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 112,
+    "title": "Software Developer Challenge 32",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "SQL",
+    "isLocked": true
+  },
+  {
+    "id": 113,
+    "title": "Software Developer Challenge 33",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Machine Learning",
+    "isLocked": true
+  },
+  {
+    "id": 114,
+    "title": "Software Developer Challenge 34",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Cloud",
+    "isLocked": true
+  },
+  {
+    "id": 115,
+    "title": "Software Developer Challenge 35",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "System Design",
+    "isLocked": true
+  },
+  {
+    "id": 116,
+    "title": "Software Developer Challenge 36",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Algorithms",
+    "isLocked": true
+  },
+  {
+    "id": 117,
+    "title": "Software Developer Challenge 37",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Data Structures",
+    "isLocked": true
+  },
+  {
+    "id": 118,
+    "title": "Software Developer Challenge 38",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Design Patterns",
+    "isLocked": true
+  },
+  {
+    "id": 119,
+    "title": "Software Developer Challenge 39",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "SQL",
+    "isLocked": true
+  },
+  {
+    "id": 120,
+    "title": "Software Developer Challenge 40",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "Software Developer",
+    "category": "Machine Learning",
+    "isLocked": true
+  },
+  {
+    "id": 121,
+    "title": "Dockerize a Node.js App",
+    "difficulty": "Easy",
+    "platform": "Docker",
+    "url": "https://docs.docker.com/language/nodejs/containerize/",
+    "role": "DevOps",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 122,
+    "title": "Kubernetes Deployment",
+    "difficulty": "Medium",
+    "platform": "K8s",
+    "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+    "role": "DevOps",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 123,
+    "title": "CI/CD Pipeline with GitHub Actions",
+    "difficulty": "Medium",
+    "platform": "GitHub",
+    "url": "https://docs.github.com/en/actions",
+    "role": "DevOps",
+    "category": "DevOps",
+    "isLocked": false
+  },
+  {
+    "id": 124,
+    "title": "Shell scripting: Log Parser",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://www.geeksforgeeks.org/shell-scripting-examples/",
+    "role": "DevOps",
+    "category": "DevOps",
+    "isLocked": false
+  },
+  {
+    "id": 125,
+    "title": "DevOps Challenge 5",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 126,
+    "title": "DevOps Challenge 6",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 127,
+    "title": "DevOps Challenge 7",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 128,
+    "title": "DevOps Challenge 8",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 129,
+    "title": "DevOps Challenge 9",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 130,
+    "title": "DevOps Challenge 10",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 131,
+    "title": "DevOps Challenge 11",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 132,
+    "title": "DevOps Challenge 12",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 133,
+    "title": "DevOps Challenge 13",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 134,
+    "title": "DevOps Challenge 14",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 135,
+    "title": "DevOps Challenge 15",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 136,
+    "title": "DevOps Challenge 16",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 137,
+    "title": "DevOps Challenge 17",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 138,
+    "title": "DevOps Challenge 18",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 139,
+    "title": "DevOps Challenge 19",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 140,
+    "title": "DevOps Challenge 20",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 141,
+    "title": "DevOps Challenge 21",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 142,
+    "title": "DevOps Challenge 22",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 143,
+    "title": "DevOps Challenge 23",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 144,
+    "title": "DevOps Challenge 24",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 145,
+    "title": "DevOps Challenge 25",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 146,
+    "title": "DevOps Challenge 26",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 147,
+    "title": "DevOps Challenge 27",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 148,
+    "title": "DevOps Challenge 28",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 149,
+    "title": "DevOps Challenge 29",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 150,
+    "title": "DevOps Challenge 30",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 151,
+    "title": "DevOps Challenge 31",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 152,
+    "title": "DevOps Challenge 32",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "SQL",
+    "isLocked": true
+  },
+  {
+    "id": 153,
+    "title": "DevOps Challenge 33",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Machine Learning",
+    "isLocked": true
+  },
+  {
+    "id": 154,
+    "title": "DevOps Challenge 34",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Cloud",
+    "isLocked": true
+  },
+  {
+    "id": 155,
+    "title": "DevOps Challenge 35",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "System Design",
+    "isLocked": true
+  },
+  {
+    "id": 156,
+    "title": "DevOps Challenge 36",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Algorithms",
+    "isLocked": true
+  },
+  {
+    "id": 157,
+    "title": "DevOps Challenge 37",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Data Structures",
+    "isLocked": true
+  },
+  {
+    "id": 158,
+    "title": "DevOps Challenge 38",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Design Patterns",
+    "isLocked": true
+  },
+  {
+    "id": 159,
+    "title": "DevOps Challenge 39",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "SQL",
+    "isLocked": true
+  },
+  {
+    "id": 160,
+    "title": "DevOps Challenge 40",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "DevOps",
+    "category": "Machine Learning",
+    "isLocked": true
+  },
+  {
+    "id": 161,
+    "title": "Implement malloc/free",
+    "difficulty": "Hard",
+    "platform": "OS",
+    "url": "https://moss.cs.iit.edu/cs351/malloc.html",
+    "role": "System Engineer",
+    "category": "Low Level",
+    "isLocked": false
+  },
+  {
+    "id": 162,
+    "title": "TCP vs UDP Handshake",
+    "difficulty": "Medium",
+    "platform": "Networking",
+    "url": "https://www.geeksforgeeks.org/differences-between-tcp-and-udp/",
+    "role": "System Engineer",
+    "category": "Networking",
+    "isLocked": false
+  },
+  {
+    "id": 163,
+    "title": "Read-Write Locks Design",
+    "difficulty": "Medium",
+    "platform": "OS",
+    "url": "https://en.wikipedia.org/wiki/Readers%E2%80%93writer_lock",
+    "role": "System Engineer",
+    "category": "OS",
+    "isLocked": false
+  },
+  {
+    "id": 164,
+    "title": "Load Balancer Simulation",
+    "difficulty": "Hard",
+    "platform": "System Design",
+    "url": "https://en.wikipedia.org/wiki/Load_balancing_(computing)",
+    "role": "System Engineer",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 165,
+    "title": "System Engineer Challenge 5",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 166,
+    "title": "System Engineer Challenge 6",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 167,
+    "title": "System Engineer Challenge 7",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 168,
+    "title": "System Engineer Challenge 8",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 169,
+    "title": "System Engineer Challenge 9",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 170,
+    "title": "System Engineer Challenge 10",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 171,
+    "title": "System Engineer Challenge 11",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 172,
+    "title": "System Engineer Challenge 12",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 173,
+    "title": "System Engineer Challenge 13",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 174,
+    "title": "System Engineer Challenge 14",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 175,
+    "title": "System Engineer Challenge 15",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 176,
+    "title": "System Engineer Challenge 16",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 177,
+    "title": "System Engineer Challenge 17",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 178,
+    "title": "System Engineer Challenge 18",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 179,
+    "title": "System Engineer Challenge 19",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 180,
+    "title": "System Engineer Challenge 20",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 181,
+    "title": "System Engineer Challenge 21",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 182,
+    "title": "System Engineer Challenge 22",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 183,
+    "title": "System Engineer Challenge 23",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 184,
+    "title": "System Engineer Challenge 24",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 185,
+    "title": "System Engineer Challenge 25",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "SQL",
+    "isLocked": false
+  },
+  {
+    "id": 186,
+    "title": "System Engineer Challenge 26",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Machine Learning",
+    "isLocked": false
+  },
+  {
+    "id": 187,
+    "title": "System Engineer Challenge 27",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Cloud",
+    "isLocked": false
+  },
+  {
+    "id": 188,
+    "title": "System Engineer Challenge 28",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "System Design",
+    "isLocked": false
+  },
+  {
+    "id": 189,
+    "title": "System Engineer Challenge 29",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Algorithms",
+    "isLocked": false
+  },
+  {
+    "id": 190,
+    "title": "System Engineer Challenge 30",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Data Structures",
+    "isLocked": false
+  },
+  {
+    "id": 191,
+    "title": "System Engineer Challenge 31",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Design Patterns",
+    "isLocked": false
+  },
+  {
+    "id": 192,
+    "title": "System Engineer Challenge 32",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "SQL",
+    "isLocked": true
+  },
+  {
+    "id": 193,
+    "title": "System Engineer Challenge 33",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Machine Learning",
+    "isLocked": true
+  },
+  {
+    "id": 194,
+    "title": "System Engineer Challenge 34",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Cloud",
+    "isLocked": true
+  },
+  {
+    "id": 195,
+    "title": "System Engineer Challenge 35",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "System Design",
+    "isLocked": true
+  },
+  {
+    "id": 196,
+    "title": "System Engineer Challenge 36",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Algorithms",
+    "isLocked": true
+  },
+  {
+    "id": 197,
+    "title": "System Engineer Challenge 37",
+    "difficulty": "Medium",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Data Structures",
+    "isLocked": true
+  },
+  {
+    "id": 198,
+    "title": "System Engineer Challenge 38",
+    "difficulty": "Easy",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Design Patterns",
+    "isLocked": true
+  },
+  {
+    "id": 199,
+    "title": "System Engineer Challenge 39",
+    "difficulty": "Medium",
+    "platform": "GFG",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "SQL",
+    "isLocked": true
+  },
+  {
+    "id": 200,
+    "title": "System Engineer Challenge 40",
+    "difficulty": "Easy",
+    "platform": "LeetCode",
+    "url": "https://leetcode.com/problemset/all/",
+    "role": "System Engineer",
+    "category": "Machine Learning",
+    "isLocked": true
+  }
+]

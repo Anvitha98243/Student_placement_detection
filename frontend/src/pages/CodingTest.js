@@ -1,147 +1,244 @@
-import React, { useEffect, useState } from 'react';
-import API from '../utils/api';
+import React, { useState, useMemo, useEffect } from 'react';
+import problemsData from '../data/problems';
+
+const ROLES = [
+  'Software Developer', 'Frontend Developer', 'Backend Developer', 
+  'Full Stack Developer', 'DevOps Engineer', 'System Engineer',
+  'Data Scientist', 'Mobile Developer', 'QA Engineer', 'Security Engineer'
+];
+
+const CATEGORY_ICONS = {
+  // DSA
+  'Arrays & Hashing': '🔢',
+  'Two Pointers': '👉👈',
+  'Sliding Window': '🪟',
+  'Stack': '📚',
+  'Binary Search': '🔍',
+  'Linked List': '🔗',
+  'Trees': '🌲',
+  'Tries': '🎋',
+  'Backtracking': '↩️',
+  'Graphs': '🕸️',
+  'Advanced Graphs': '🛸',
+  'Dynamic Programming': '📉',
+  'Greedy': '🤑',
+  'Intervals': '⏰',
+  'Math & Geometry': '📐',
+  'Bit Manipulation': '💾',
+  // Ops
+  'Linux & Shell': '🐚',
+  'Networking': '🌐',
+  'Docker & K8s': '🐳',
+  'CI/CD': '🚀',
+  'Security & IAM': '🛡️',
+  'Monitoring & Logging': '📊',
+  'System Architecture': '🏛️',
+  'Machine Learning': '🤖'
+};
 
 export default function CodingTest() {
-  const [problems, setProblems] = useState([]);
-  const [current, setCurrent] = useState(0);
-  const [code, setCode] = useState('');
-  const [results, setResults] = useState({});
-  const [submitted, setSubmitted] = useState(false);
-  const [finalScore, setFinalScore] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [selectedRole, setSelectedRole] = useState('Software Developer');
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [completedProblems, setCompletedProblems] = useState(() => {
+    const saved = localStorage.getItem('completed_problems_massive');
+    return saved ? JSON.parse(saved) : {};
+  });
 
   useEffect(() => {
-    API.get('/tests/coding').then(r => {
-      setProblems(r.data.problems);
-      setCode(r.data.problems[0]?.starter_code || '');
-    }).finally(() => setLoading(false));
-  }, []);
+    localStorage.setItem('completed_problems_massive', JSON.stringify(completedProblems));
+  }, [completedProblems]);
 
-  const handleProblemChange = (idx) => {
-    setCurrent(idx);
-    setCode(results[idx]?.code || problems[idx]?.starter_code || '');
+  const toggleStatus = (id) => {
+    setCompletedProblems(prev => ({
+      ...prev,
+      [id]: !prev[id]
+    }));
   };
 
-  const handleSave = () => {
-    setResults(prev => ({ ...prev, [current]: { code, solved: code.length > 100 } }));
-    if (current < problems.length - 1) {
-      const next = current + 1;
-      setCurrent(next);
-      setCode(results[next]?.code || problems[next]?.starter_code || '');
-    }
-  };
+  // Reset category when role changes
+  useEffect(() => {
+    setSelectedCategory('All');
+  }, [selectedRole]);
 
-  const handleSubmit = async () => {
-    const solved = Object.values(results).filter(r => r.solved).length;
-    const total = problems.length;
-    setFinalScore({ solved, total });
-    setSubmitted(true);
-    try {
-      await API.post('/tests/submit', {
-        test_type: 'coding', score: solved, total,
-        details: { problems_attempted: Object.keys(results).length }
-      });
-    } catch (e) { console.error(e); }
-  };
+  const filteredProblems = useMemo(() => {
+    return problemsData.filter(p => {
+      const matchesRole = p.role === selectedRole;
+      const matchesCategory = selectedCategory === 'All' || p.category === selectedCategory;
+      const matchesSearch = p.title.toLowerCase().includes(searchQuery.toLowerCase());
+      return matchesRole && matchesCategory && matchesSearch;
+    });
+  }, [selectedRole, selectedCategory, searchQuery]);
 
-  if (loading) return <div style={{ padding: 28, display: 'flex', justifyContent: 'center', marginTop: 60 }}><div className="spinner" /></div>;
+  const categories = useMemo(() => {
+    const cats = new Set();
+    problemsData.forEach(p => {
+      if (p.role === selectedRole) cats.add(p.category);
+    });
+    return ['All', ...Array.from(cats)];
+  }, [selectedRole]);
 
-  if (submitted && finalScore) return (
-    <div className="content-area fade-in" style={{ maxWidth: 600, margin: '0 auto' }}>
-      <div className="card" style={{ textAlign: 'center', padding: 40 }}>
-        <div style={{ fontSize: 64, marginBottom: 16 }}>🎉</div>
-        <h2 style={{ fontSize: 28, fontWeight: 800, fontFamily: 'Space Grotesk', marginBottom: 8 }}>Test Complete!</h2>
-        <div style={{ fontSize: 48, fontWeight: 800, color: '#6366f1', margin: '16px 0' }}>
-          {finalScore.solved}/{finalScore.total}
-        </div>
-        <p style={{ color: 'var(--text2)', marginBottom: 24 }}>
-          Score: {((finalScore.solved / finalScore.total) * 100).toFixed(0)}% — {finalScore.solved >= 3 ? '🌟 Excellent!' : finalScore.solved >= 2 ? '👍 Good!' : '📚 Keep practicing!'}
-        </p>
-        <div style={{ background: 'var(--bg2)', borderRadius: 12, padding: 16, marginBottom: 24 }}>
-          <p style={{ fontSize: 13, color: 'var(--text2)' }}>Your programming skill score has been updated in your profile.</p>
-        </div>
-        <button className="btn btn-primary" onClick={() => { setSubmitted(false); setFinalScore(null); setResults({}); setCurrent(0); setCode(problems[0]?.starter_code || ''); }}>
-          Try Again
-        </button>
-      </div>
-    </div>
-  );
+  const groupedProblems = useMemo(() => {
+    const groups = {};
+    filteredProblems.forEach(p => {
+      if (!groups[p.category]) groups[p.category] = [];
+      groups[p.category].push(p);
+    });
+    return groups;
+  }, [filteredProblems]);
 
-  const prob = problems[current];
+  const totalInRole = useMemo(() => {
+    return problemsData.filter(p => p.role === selectedRole).length;
+  }, [selectedRole]);
+
+  const solvedInRole = useMemo(() => {
+    return problemsData.filter(p => p.role === selectedRole && completedProblems[p.id]).length;
+  }, [selectedRole, completedProblems]);
 
   return (
     <div className="content-area fade-in">
-      <div style={{ marginBottom: 24 }}>
-        <h1 className="section-title">💻 Coding Test</h1>
-        <p className="section-sub">Solve the problems below to improve your programming skill score</p>
-      </div>
-      <div className="grid-2" style={{ alignItems: 'start' }}>
-        {/* Problem list + current problem */}
+      <div style={{ marginBottom: 32, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 20 }}>
         <div>
-          <div style={{ display: 'flex', gap: 8, marginBottom: 16, flexWrap: 'wrap' }}>
-            {problems.map((p, i) => (
-              <button key={i} onClick={() => handleProblemChange(i)}
-                className="btn" style={{
-                  background: i === current ? 'var(--accent)' : results[i]?.solved ? 'rgba(16,185,129,0.2)' : 'var(--card2)',
-                  color: i === current ? 'white' : results[i]?.solved ? '#10b981' : 'var(--text2)',
-                  border: `1px solid ${i === current ? 'var(--accent)' : results[i]?.solved ? 'rgba(16,185,129,0.4)' : 'var(--border)'}`,
-                  padding: '6px 14px', fontSize: 13
-                }}>
-                {i + 1}. {p.title.split(' ')[0]}
-              </button>
-            ))}
-          </div>
-
-          {prob && (
-            <div className="question-card">
-              <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 12 }}>
-                <h3 style={{ fontSize: 17, fontWeight: 700 }}>{prob.title}</h3>
-                <span className={`badge ${prob.difficulty === 'Easy' ? 'badge-success' : prob.difficulty === 'Medium' ? 'badge-warning' : 'badge-danger'}`}>
-                  {prob.difficulty}
-                </span>
-                <span className="badge badge-info">{prob.category}</span>
-              </div>
-              <p style={{ color: 'var(--text2)', lineHeight: 1.6, marginBottom: 16, fontSize: 14 }}>{prob.description}</p>
-              {prob.examples?.map((ex, i) => (
-                <div key={i} style={{ background: 'var(--bg)', borderRadius: 8, padding: 12, marginBottom: 8, fontSize: 13 }}>
-                  <div style={{ color: 'var(--text3)', marginBottom: 4 }}>Example:</div>
-                  <div><span style={{ color: '#94a3b8' }}>Input: </span><code style={{ color: '#a5b4fc' }}>{ex.input}</code></div>
-                  <div><span style={{ color: '#94a3b8' }}>Output: </span><code style={{ color: '#6ee7b7' }}>{ex.output}</code></div>
-                </div>
-              ))}
-            </div>
-          )}
+          <h1 className="section-title">🚀 Interview Preparation</h1>
+          <p className="section-sub">Mastering technical challenges across {ROLES.length} specialized roles</p>
         </div>
-
-        {/* Code editor */}
-        <div className="card">
-          <div className="card-title">📝 Your Solution</div>
-          <textarea
-            className="code-editor"
-            value={code}
-            onChange={e => setCode(e.target.value)}
-            rows={14}
-            spellCheck={false}
-            placeholder="Write your solution here..."
+        
+        <div className="search-box">
+          <input 
+            type="text" 
+            placeholder="Search all problems..." 
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            style={{
+              background: 'var(--card)',
+              border: '1px solid var(--border)',
+              borderRadius: '12px',
+              padding: '12px 16px',
+              color: 'var(--text)',
+              width: '280px',
+              outline: 'none',
+              fontSize: '14px'
+            }}
           />
-          <div style={{ marginTop: 6, fontSize: 12, color: 'var(--text3)' }}>
-            💡 Tip: A solution with 100+ characters is considered attempted
-          </div>
-          <div style={{ display: 'flex', gap: 10, marginTop: 16 }}>
-            <button className="btn btn-primary" style={{ flex: 1 }} onClick={handleSave}>
-              {current < problems.length - 1 ? '💾 Save & Next' : '✅ Save Solution'}
-            </button>
-          </div>
-          <div className="divider" />
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 13, color: 'var(--text2)', marginBottom: 12 }}>
-            <span>Attempted: {Object.keys(results).length}/{problems.length}</span>
-            <span>Solved: {Object.values(results).filter(r => r.solved).length}</span>
-          </div>
-          <button className="btn btn-success" style={{ width: '100%' }} onClick={handleSubmit}
-            disabled={Object.keys(results).length === 0}>
-            🚀 Submit All Solutions
-          </button>
         </div>
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(300px, 400px) 1fr', gap: 32, marginBottom: 32 }}>
+        <div className="role-selector-container">
+          <label style={{ display: 'block', marginBottom: 8, fontSize: '13px', color: 'var(--text2)', fontWeight: 600 }}>Select Your Target Role</label>
+          <select 
+            className="role-dropdown"
+            value={selectedRole}
+            onChange={(e) => setSelectedRole(e.target.value)}
+          >
+            {ROLES.map(role => (
+              <option key={role} value={role}>{role}</option>
+            ))}
+          </select>
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: 24, padding: '16px 24px', background: 'var(--bg2)', borderRadius: 16, border: '1px solid var(--border)' }}>
+          <div>
+            <div style={{ fontSize: '12px', color: 'var(--text3)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>Progress</div>
+            <div style={{ fontSize: '24px', fontWeight: 800, color: 'var(--text)' }}>
+              {solvedInRole} <span style={{ color: 'var(--text3)', fontSize: '16px', fontWeight: 500 }}>/ {totalInRole}</span>
+            </div>
+          </div>
+          <div style={{ flex: 1, height: '8px', background: 'rgba(255,255,255,0.05)', borderRadius: '4px', overflow: 'hidden' }}>
+            <div style={{ 
+              width: `${(solvedInRole / totalInRole) * 100}%`, 
+              height: '100%', 
+              background: 'linear-gradient(90deg, var(--accent) 0%, #a855f7 100%)',
+              transition: 'width 0.4s ease'
+            }} />
+          </div>
+        </div>
+      </div>
+
+      <div className="pill-container">
+        {categories.map(cat => (
+          <div 
+            key={cat} 
+            className={`pill ${selectedCategory === cat ? 'active' : ''}`}
+            onClick={() => setSelectedCategory(cat)}
+          >
+            {cat !== 'All' && <span className="pill-icon">{CATEGORY_ICONS[cat] || '✨'}</span>}
+            {cat}
+          </div>
+        ))}
+      </div>
+
+      <div className="problem-table-container">
+        <table className="problem-table">
+          <thead>
+            <tr>
+              <th style={{ width: '80px', textAlign: 'center' }}>Status</th>
+              <th>Problem Title</th>
+              <th style={{ width: '140px' }}>Difficulty</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Object.keys(groupedProblems).length > 0 ? (
+              Object.entries(groupedProblems).map(([category, items]) => (
+                <React.Fragment key={category}>
+                  <tr>
+                    <td colSpan="3" className="category-header">
+                      <span style={{ fontSize: '18px', marginRight: '8px' }}>{CATEGORY_ICONS[category] || '📁'}</span>
+                      {category} <span style={{ color: 'var(--text3)', fontSize: '12px', marginLeft: '12px', fontWeight: 500 }}>{items.length} Questions</span>
+                    </td>
+                  </tr>
+                  {items.map(prob => (
+                    <tr key={prob.id} className="problem-row">
+                      <td style={{ textAlign: 'center' }}>
+                        <input 
+                          type="checkbox" 
+                          className="status-checkbox"
+                          checked={!!completedProblems[prob.id]}
+                          onChange={() => toggleStatus(prob.id)}
+                        />
+                      </td>
+                      <td>
+                        <a 
+                          href={prob.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="problem-link"
+                          title={`Solve on ${prob.platform}`}
+                        >
+                          {prob.title}
+                          <span style={{ fontSize: '10px', color: 'var(--text3)', marginLeft: '10px', fontWeight: 500 }}>({prob.platform})</span>
+                        </a>
+                      </td>
+                      <td>
+                        <span className={`diff-${prob.difficulty.toLowerCase()}`} style={{ fontWeight: 700 }}>
+                          {prob.difficulty}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </React.Fragment>
+              ))
+            ) : (
+              <tr>
+                <td colSpan="3" style={{ textAlign: 'center', padding: '100px 20px', color: 'var(--text3)' }}>
+                  <div style={{ fontSize: 64, marginBottom: 24 }}>🏖️</div>
+                  <h3 style={{ color: 'var(--text)' }}>No Matching Challenges</h3>
+                  <p>Try adjusting your search or category filters</p>
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+
+      <div style={{ marginTop: 48, padding: 32, background: 'var(--card)', borderRadius: 24, border: '1px solid var(--border)', textAlign: 'center' }}>
+        <h3 style={{ marginBottom: 16 }}>🎯 Your Daily Goal</h3>
+        <p style={{ color: 'var(--text2)', maxWidth: '600px', margin: '0 auto 24px', lineHeight: 1.6 }}>
+          Solving just 1-2 problems daily in the <strong>{selectedRole}</strong> track can significantly increase your placement chances!
+        </p>
+        <button className="btn btn-secondary" onClick={() => setCompletedProblems({})}>
+          Reset Progress Tracking
+        </button>
       </div>
     </div>
   );
