@@ -32,6 +32,12 @@ export default function WritingSkill({ questions, inputs, onInputChange, submitt
     };
   };
 
+  const [analyzedState, setAnalyzedState] = React.useState({});
+
+  const handleAnalyze = (qid) => {
+    setAnalyzedState({ ...analyzedState, [qid]: true });
+  };
+
   return (
     <div className="fade-in">
       <h3 style={{ marginBottom: 20, color: 'var(--text1)' }}>✍️ Writing Skills</h3>
@@ -55,8 +61,20 @@ export default function WritingSkill({ questions, inputs, onInputChange, submitt
             onChange={(e) => !submitted && onInputChange(q.id, e.target.value)}
             disabled={submitted}
           />
+          
+          {!submitted && (
+            <div style={{ marginTop: 12, display: 'flex', justifyContent: 'flex-end' }}>
+              <button 
+                className="btn btn-secondary" 
+                onClick={() => handleAnalyze(q.id)}
+                disabled={!inputs[q.id] || inputs[q.id].length < 10}
+              >
+                Submit for Analysis
+              </button>
+            </div>
+          )}
 
-          {submitted && inputs[q.id] && (() => {
+          {(submitted || analyzedState[q.id]) && inputs[q.id] && (() => {
             const analysis = analyzeWriting(inputs[q.id], q.hints);
             if (!analysis) return null;
             return (

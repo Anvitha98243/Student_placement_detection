@@ -26,7 +26,7 @@ export default function ListeningSkill({ questions, answers, onAnswer, submitted
             {q.options.map((opt, oi) => {
               const isSelected = answers[q.id] === oi;
               const isCorrect = q.answer === oi;
-              
+
               let statusClass = '';
               if (submitted) {
                 if (isCorrect) statusClass = 'correct';
@@ -52,7 +52,7 @@ export default function ListeningSkill({ questions, answers, onAnswer, submitted
           </div>
           {submitted && (
             <div style={{ paddingLeft: 44, marginTop: 12, fontSize: 13, color: 'var(--text2)', background: 'rgba(16, 185, 129, 0.05)', padding: 10, borderRadius: 8 }}>
-              <strong>Explanation:</strong> {q.answer === 1 ? "The speaker explicitly mentions submitting on 'Friday afternoon' to the 'department head'." : "The correct choice aligns with the speaker's directive."}
+              <strong>Explanation:</strong> {q.explanation || "The correct choice aligns with the speaker's directive."}
             </div>
           )}
         </div>
